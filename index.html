@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="front.js"></script>
+    <script src="mail.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"
+    ></script>
+    <script>
+      (function () {
+        emailjs.init("wsqflf0MA67xoZGJU");
+      })();
+    </script>
+    <script
+      src="https://kit.fontawesome.com/02e27ca615.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Florian Beudaert</title>
+  </head>
+  <body class="bg-[#F1F1F1]">
+    <nav class="py-4 bg-[#484646] fixed w-full">
+      <div class="flex justify-between items-center">
+        <div class="ml-6">
+          <img src="assets/logo.png" class="w-[75px] h-[75px]" alt="logo" />
+        </div>
+        <div class="md:hidden">
+          <button
+            class="flex items-center px-6 py-4 mr-6 border rounded text-white border-white hover:text-[#FEF6A1] hover:border-b-4 transition duration-100 ease-in-out"
+            onclick="toggleMenu()"
+          >
+            <i class="fa-solid fa-bars fa-md" style="color: #ffffff"></i>
+          </button>
+        </div>
+        <ul class="hidden md:flex gap-6 mr-12">
+          <li>
+            <a
+              href="#Accueil"
+              class="pb-1 border-b-2 border-white text-white hover:border-[#62cb78] hover:text-[#62cb78] hover:border-b-4 transition duration-100 ease-in-out xl:text-xl text-base"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Propos"
+              class="pb-1 border-b-2 border-white text-white hover:border-[#62cb78] hover:text-[#62cb78] hover:border-b-4 transition duration-100 ease-in-out xl:text-xl text-base"
+              >À propos</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Compétences"
+              class="pb-1 border-b-2 border-white text-white hover:border-[#62cb78] hover:text-[#62cb78] hover:border-b-4 transition duration-100 ease-in-out xl:text-xl text-base"
+              >Compétences</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Expériences"
+              class="pb-1 border-b-2 border-white text-white hover:border-[#62cb78] hover:text-[#62cb78] hover:border-b-4 transition duration-100 ease-in-out xl:text-xl text-base"
+              >Expériences & Hobbies</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Projets"
+              class="pb-1 border-b-2 border-white text-white hover:border-[#62cb78] hover:text-[#62cb78] hover:border-b-4 transition duration-100 ease-in-out xl:text-xl text-base"
+              >Projets</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Contact"
+              class="pb-1 border-b-2 border-white text-white hover:border-[#62cb78] hover:text-[#62cb78] hover:border-b-4 transition duration-100 ease-in-out xl:text-xl text-base"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <ul class="md:hidden" id="mobile-menu" style="display: none">
+        <li>
+          <a
+            href="#Accueil"
+            class="block py-2 px-4 text-white hover:bg-[#62cb78] hover:text-[#484646] transition duration-100 ease-in-out"
+            >Accueil</a
+          >
+        </li>
+        <li>
+          <a
+            href="#Propos"
+            class="block py-2 px-4 text-white hover:bg-[#62cb78] hover:text-[#484646] transition duration-100 ease-in-out"
+            >À propos</a
+          >
+        </li>
+        <li>
+          <a
+            href="#Compétences"
+            class="block py-2 px-4 text-white hover:bg-[#62cb78] hover:text-[#484646] transition duration-100 ease-in-out"
+            >Compétences</a
+          >
+        </li>
+        <li>
+          <a
+            href="#Expériences"
+            class="block py-2 px-4 text-white hover:bg-[#62cb78] hover:text-[#484646] transition duration-100 ease-in-out"
+            >Expériences & Hobbies</a
+          >
+        </li>
+        <li>
+          <a
+            href="#Projets"
+            class="block py-2 px-4 text-white hover:bg-[#62cb78] hover:text-[#484646] transition duration-100 ease-in-out"
+            >Projets</a
+          >
+        </li>
+        <li>
+          <a
+            href="#Contact"
+            class="block py-2 px-4 text-white hover:bg-[#62cb78] hover:text-[#484646] transition duration-100 ease-in-out"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <!-- ACCUEIL -->
+
+      <div id="Accueil" class="flex flex-col md:flex-row pt-24">
+        <div class="w-full md:w-2/5 mt-24">
+          <div class="flex justify-center">
+            <img
+              src="assets/photo.png"
+              class="md:w-[300px] md:h-[300px] w-[150px] h-[150px] rounded-full mt-20"
+              alt="Photo de profil"
+            />
+          </div>
+          <div class="text-center mt-8">
+            <p class="text-[#484646] font-bold uppercase md:text-3xl text-base">
+              Je m'appelle
+            </p>
+            <p class="md:text-3xl text-base">Florian Beudaert</p>
+            <p
+              class="text-[#484646] font-bold uppercase md:text-3xl text-base mt-6"
+            >
+              JE SUIS EN FORMATION
+            </p>
+            <p class="md:text-3xl text-base">en développement web</p>
+            <p
+              class="text-[#484646] font-bold uppercase md:text-3xl text-base mt-6"
+            >
+              SPÉCIALISÉ
+            </p>
+            <p class="md:text-3xl text-base">en back-end</p>
+          </div>
+        </div>
+        <div
+          class="w-full md:w-3/5 h-64 md:h-screen bg-cover bg-center"
+          style="background-image: url('/assets/bg.png')"
+        ></div>
+      </div>
+
+      <!-- PROPOS -->
+
+      <div class="mx-4 md:mx-0 py-28" id="Propos">
+        <h2
+          class="ml-4 md:ml-32 mb-4 text-[#484646] font-bold uppercase text-3xl"
+        >
+          À propos
+        </h2>
+        <div class="flex flex-col md:flex-row">
+          <div class="w-full md:w-2/5">
+            <div class="mx-auto md:mx-0 mt-6 md:mt-0 flex justify-center">
+              <img
+                src="assets/photo2.png"
+                class="w-4/6"
+                alt="photo de profil 2"
+              />
+            </div>
+          </div>
+          <div class="w-full md:w-3/5 mt-6 md:mt-0">
+            <!-- Présentation -->
+            <div class="mb-12 ml-14">
+              <div class="flex">
+                <p
+                  class="text-[#484646] font-bold text-sm md:text-xl uppercase"
+                >
+                  Nom :
+                </p>
+                <p class="text-sm md:text-xl ml-2">Beudaert</p>
+              </div>
+              <hr class="w-3/5 mt-4" />
+              <div class="flex">
+                <p
+                  class="text-[#484646] font-bold text-sm md:text-xl mt-4 uppercase"
+                >
+                  Prénom :
+                </p>
+                <p class="text-sm md:text-xl mt-4 ml-2">Florian</p>
+              </div>
+              <hr class="w-3/5 mt-4" />
+              <div class="flex">
+                <p
+                  class="text-[#484646] font-bold text-sm md:text-xl mt-4 uppercase"
+                >
+                  Age :
+                </p>
+                <p class="text-sm md:text-xl mt-4 ml-2">19 ans</p>
+              </div>
+              <hr class="w-3/5 mt-4" />
+              <div class="flex">
+                <p
+                  class="text-[#484646] font-bold text-sm md:text-xl mt-4 uppercase"
+                >
+                  Adresse :
+                </p>
+                <p class="text-sm md:text-xl mt-4 ml-2">
+                  195 Avenue des fusillées, Henin-Beaumont
+                </p>
+              </div>
+              <hr class="w-3/5 mt-4" />
+              <div class="flex">
+                <p
+                  class="text-[#484646] font-bold text-sm md:text-xl mt-4 uppercase"
+                >
+                  Nationalité :
+                </p>
+                <p class="text-sm md:text-xl mt-4 ml-2">Française</p>
+              </div>
+              <hr class="w-3/5 mt-4" />
+              <div class="flex">
+                <p
+                  class="text-[#484646] font-bold text-sm md:text-xl mt-4 uppercase"
+                >
+                  Téléphone :
+                </p>
+                <p class="text-sm md:text-xl mt-4 ml-2">07 93 74 03 54</p>
+              </div>
+              <hr class="w-3/5 mt-4" />
+              <div class="flex">
+                <p
+                  class="text-[#484646] font-bold text-sm md:text-xl mt-4 uppercase"
+                >
+                  Email :
+                </p>
+                <p class="text-sm md:text-xl mt-4 ml-2">
+                  beudaertflorian2@gmail.com
+                </p>
+              </div>
+              <hr class="w-3/5 mt-4" />
+              <div class="mx-auto mt-8">
+                <p
+                  class="text-[#484646] font-bold text-sm md:text-xl mb-4 uppercase"
+                >
+                  Profil
+                </p>
+                <p class="text-sm md:text-xl">
+                  Je suis actuellement en formation de développeur web,
+                  passionné par le développement web depuis plusieurs années, je
+                  souhaite en faire mon métier. Je suis quelqu'un de motiver, à
+                  l'écoute et persévérant. Je suis également quelqu'un de très
+                  curieux, et ayant une soif d'apprendre.
+                </p>
+              </div>
+              <div class="mt-8">
+                <a
+                  href="./assets/files/CV_BEUDAERT_FLORIAN.pdf"
+                  class="bg-[#484646] text-white py-3 px-4 rounded-full hover:bg-[#62cb78] hover:text-[#484646] transition duration-100 ease-in-out"
+                  target="_blank"
+                  >Télécharger mon CV</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMPETENCES -->
+
+      <div id="Compétences" class="mx-4 xl:mx-0 ml-4 xl:ml-32 mb-32 pt-32">
+        <h2 class="mb-8 text-[#484646] font-bold uppercase text-3xl">
+          Compétences
+        </h2>
+        <div class="flex flex-col xl:flex-row xl:ml-32 ml-20">
+          <div class="w-full xl:w-1/2">
+            <h2 class="mb-8 text-[#484646] font-bold text-2xl uppercase">
+              HARD SKILLS
+            </h2>
+            <div class="flex flex-col xl:flex-row">
+              <!-- Partie gauche -->
+              <div class="w-full xl:w-1/2">
+                <div class="flex items-center mb-8">
+                  <img
+                    src="assets/techno/html.png"
+                    class="w-[85px] mr-4"
+                    alt="html"
+                  />
+                  <div class="flex">
+                    <div class="w-8 h-8 rounded-full bg-[#F16529] mr-1"></div>
+                    <div class="w-8 h-8 rounded-full bg-[#F16529] mr-1"></div>
+                    <div class="w-8 h-8 rounded-full bg-[#484646]"></div>
+                  </div>
+                </div>
+                <div class="flex items-center ml-2 mb-8">
+                  <img
+                    src="assets/techno/css.png"
+                    class="w-[75px] mr-5"
+                    alt="css"
+                  />
+                  <div class="flex">
+                    <div class="w-8 h-8 rounded-full bg-[#1B73BA] mr-1"></div>
+                    <div class="w-8 h-8 rounded-full bg-[#1B73BA] mr-1"></div>
+                    <div class="w-8 h-8 rounded-full bg-[#484646]"></div>
+                  </div>
+                </div>
+                <div class="flex items-center ml-2 mb-8">
+                  <img
+                    src="assets/techno/php.png"
+                    class="w-[75px] mr-5"
+                    alt="php"
+                  />
+                  <div class="flex">
+                    <div class="w-8 h-8 rounded-full bg-[#787CB5] mr-1"></div>
+                    <div class="w-8 h-8 rounded-full bg-[#787CB5] mr-1"></div>
+                    <div class="w-8 h-8 rounded-full bg-[#484646]"></div>
+                  </div>
+                </div>
+                <div class="flex items-center ml-2 mb-8">
+                  <img
+                    src="assets/techno/js.png"
+                    class="w-[75px] mr-5"
+                    alt="js"
+                  />
+                  <div class="flex">
+                    <div class="w-8 h-8 rounded-full bg-[#F0DB4F] mr-1"></div>
+                    <div class="w-8 h-8 rounded-full bg-[#484646] mr-1"></div>
+                    <div class="w-8 h-8 rounded-full bg-[#484646]"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Partie droite de hard skill -->
+              <div class="w-full xl:w-1/2">
+                <div class="flex items-center ml-2 mb-8">
+                  <img
+                    src="assets/techno/mysql.png"
+                    class="w-[85px] mr-3"
+                    alt="mysql"
+                  />
+                  <div class="flex">
+                    <div class="w-8 h-8 rounded-full bg-[#F7941E] mr-1"></div>
+                    <div class="w-8 h-8 rounded-full bg-[#F7941E] mr-1"></div>
+                    <div class="w-8 h-8 rounded-full bg-[#484646]"></div>
+                  </div>
+                </div>
+                <div class="flex items-center ml-2 mb-8">
+                  <img
+                    src="assets/techno/nodejs.png"
+                    class="w-[75px] mr-6"
+                    alt="nodejs"
+                  />
+                  <div class="flex">
+                    <div class="w-8 h-8 rounded-full bg-[#529F41] mr-1"></div>
+                    <div class="w-8 h-8 rounded-full bg-[#484646] mr-1"></div>
+                    <div class="w-8 h-8 rounded-full bg-[#484646]"></div>
+                  </div>
+                </div>
+                <div class="flex items-center ml-2 mb-8">
+                  <img
+                    src="assets/techno/react.png"
+                    class="w-[85px] mr-3"
+                    alt="react"
+                  />
+                  <div class="flex">
+                    <div class="w-8 h-8 rounded-full bg-[#61DBFB] mr-1"></div>
+                    <div class="w-8 h-8 rounded-full bg-[#484646] mr-1"></div>
+                    <div class="w-8 h-8 rounded-full bg-[#484646]"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full xl:w-1/2 mt-8 xl:mt-0">
+            <h2 class="mb-8 text-[#484646] font-bold text-2xl uppercase">
+              SOFT SKILLS
+            </h2>
+            <div
+              class="flex items-center ml-2 mb-8 hover:bg-[#62cb78] transition duration-500 ease-in-out cursor-default rounded-lg w-64"
+            >
+              <img src="assets/equipe.png" class="w-[85px] mr-3" alt="equipe" />
+              <div class="flex">
+                <p class="text-lg">Esprit d'équipe</p>
+              </div>
+            </div>
+            <div
+              class="flex items-center ml-2 mb-8 hover:bg-[#62cb78] transition duration-500 ease-in-out cursor-default rounded-lg w-64"
+            >
+              <img src="assets/ecoute.png" class="w-[85px] mr-3" alt="ecoute" />
+              <div class="flex">
+                <p class="text-lg">À l'écoute</p>
+              </div>
+            </div>
+            <div
+              class="flex items-center ml-2 mb-8 hover:bg-[#62cb78] transition duration-500 ease-in-out cursor-default rounded-lg w-64"
+            >
+              <img
+                src="assets/autonome.png"
+                class="w-[85px] mr-3"
+                alt="autonome"
+              />
+              <div class="flex">
+                <p class="text-lg">Autonome</p>
+              </div>
+            </div>
+            <div class="flex items-center ml-2 mb-8 hover:bg-[#62cb78] transition duration-500 ease-in-out cursor-default rounded-lg w-64">
+              <img
+                src="assets/rigoureux.png"
+                class="w-[85px] mr-3"
+                alt="rigoureux"
+              />
+              <div class="flex">
+                <p class="text-lg">Rigoureux</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXPERIENCES & HOBBIES -->
+
+      <div id="Expériences" class="mx-4 xl:mx-0 ml-4 xl:mx-32 mb-32 pt-32">
+        <h2 class="mb-8 text-[#484646] font-bold uppercase text-3xl">
+          Expériences & Hobbies
+        </h2>
+      </div>
+      <div class="flex flex-col xl:flex-row justify-between ml-4 xl:ml-32 mr-4">
+        <div class="w-full xl:w-auto">
+          <h2 class="mb-8 text-[#484646] font-bold text-2xl uppercase">
+            Expériences
+          </h2>
+          <div
+            class="hover:bg-[#62cb78] transition duration-500 ease-in-out cursor-default shadow-lg rounded-lg p-4"
+          >
+            <p class="text-lg text-[#484646] font-bold mb-2">
+              Serveur - Stage d'immersion
+            </p>
+            <p class="text-lg text-[#484646] mb-2">
+              L'atelier - Restaurant à Hénin-Beaumont | 2019
+            </p>
+            <p class="text-lg text-[#484646] mb-2">
+              - Service, plonge, nettoyage de la salle, préparation des tables
+            </p>
+          </div>
+        </div>
+        <div class="w-full xl:w-auto mt-8 xl:mt-0">
+          <h2 class="mb-8 text-[#484646] font-bold text-2xl uppercase">
+            Diplômes
+          </h2>
+          <div
+            class="mb-8 hover:bg-[#62cb78] transition duration-500 ease-in-out cursor-default shadow-lg rounded-lg p-4"
+          >
+            <p class="text-lg text-[#484646] font-bold">
+              Epitech (Web@cademie) - LILLE
+            </p>
+            <p class="text-lg text-[#484646]">
+              Développeur Intégrateur Web | 2022 - 2024
+            </p>
+          </div>
+          <div
+            class="mb-8 hover:bg-[#62cb78] transition duration-500 ease-in-out cursor-default shadow-lg rounded-lg p-4"
+          >
+            <p class="text-lg text-[#484646] font-bold">
+              Lycée Louis Pasteur - HÉNIN-BEAUMONT
+            </p>
+            <p class="text-lg text-[#484646]">Baccalauréat STI2D | 2022</p>
+          </div>
+          <div
+            class="mb-8 hover:bg-[#62cb78] transition duration-500 ease-in-out cursor-default shadow-lg rounded-lg p-4"
+          >
+            <p class="text-lg text-[#484646] font-bold">
+              Collège Gérard Philipe - HÉNIN-BEAUMONT
+            </p>
+            <p class="text-lg text-[#484646]">Brevet des collèges | 2019</p>
+          </div>
+        </div>
+        <div class="w-full xl:w-auto mt-8 xl:mt-0 mr-64">
+          <h2 class="mb-8 text-[#484646] font-bold text-2xl uppercase">
+            Hobbies
+          </h2>
+          <div class="flex flex-col">
+            <div
+              class="flex items-center mb-8 xl:mb-8 hover:bg-[#62cb78] transition duration-500 ease-in-out cursor-default rounded-lg p-4"
+            >
+              <img src="assets/manga.png" class="w-[85px] mr-3" alt="manga" />
+              <p class="text-lg">Manga</p>
+            </div>
+            <div
+              class="flex items-center mb-8 xl:mb-8 hover:bg-[#62cb78] transition duration-500 ease-in-out cursor-default rounded-lg p-4"
+            >
+              <img src="assets/anime.png" class="w-[85px] mr-3" alt="anime" />
+              <p class="text-lg">Anime</p>
+            </div>
+            <div
+              class="flex items-center mb-8 xl:mb-8 hover:bg-[#62cb78] transition duration-500 ease-in-out cursor-default rounded-lg p-4"
+            >
+              <img src="assets/jeux.png" class="w-[85px] mr-3" alt="jeux" />
+              <p class="text-lg">Jeux Vidéo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJETS -->
+      <div id="Projets" class="mx-4 xl:mx-0 ml-4 xl:mx-32 mb-32 pt-32">
+        <h2 class="mb-8 text-[#484646] font-bold uppercase text-3xl">
+          Projets
+        </h2>
+      </div>
+
+      <h2 class="mb-8 text-[#484646] font-bold text-2xl uppercase ml-4 xl:ml-32">
+        Gros Projets
+      </h2>
+
+      <div class="flex flex-wrap justify-center xl:flex-row xl:justify-between ml-4 md:ml-32 mb-12 mr-32">
+        <div class="flex flex-col items-center mb-8 mr-8">
+          <div class="border-[6px] border-[#62cb78] rounded-[6px] w-[350px] h-[350px] mb-4">
+            <a href="https://github.com/FlorianBeudaert/My-Spotify" target="_blank">
+              <img src="assets/project/spotify.jpg" class="hover:brightness-50" alt="spotify" />
+            </a>
+          </div>
+          <h2 class="mb-2 text-[#484646] font-bold text-2xl uppercase text-center">
+            My Spotify
+          </h2>
+        </div>
+        
+        <div class="flex flex-col items-center mb-8 mr-8">
+          <div class="border-[6px] border-[#62cb78] rounded-[6px] w-[350px] h-[350px] mb-4">
+            <a href="https://github.com/FlorianBeudaert/My-snapchat" target="_blank">
+              <img src="assets/project/snapchat.jpg" class="hover:brightness-50" alt="snapchat" />
+            </a>
+          </div>
+          <h2 class="mb-2 text-[#484646] font-bold text-2xl uppercase text-center">
+            My Snapchat
+          </h2>
+        </div>
+        
+        <div class="flex flex-col items-center mb-8 mr-8">
+          <div class="border-[6px] border-[#62cb78] rounded-[6px] w-[350px] h-[350px] mb-4">
+            <a href="https://github.com/FlorianBeudaert/my-twitter" target="_blank">
+              <img src="assets/project/twitter.jpg" class="hover:brightness-50" alt="twitter" />
+            </a>
+          </div>
+          <h2 class="mb-2 text-[#484646] font-bold text-2xl uppercase text-center">
+            My Twitter
+          </h2>
+        </div>
+      </div>
+
+      <h2 class="mb-8 text-[#484646] font-bold text-2xl uppercase ml-4 xl:ml-32">
+        Autres Projets
+      </h2>
+
+      <div class="flex flex-wrap justify-center xl:flex-row xl:justify-between ml-4 md:ml-32 mb-12 mr-32">
+        <div class="flex flex-col items-center mb-8 mr-8">
+          <div class="border-[6px] border-[#62cb78] rounded-[6px] w-[350px] h-[350px] mb-4">
+            <a href="https://github.com/FlorianBeudaert/my-pushswap" target="_blank">
+              <img src="assets/project/pushswap.png" class="hover:brightness-50" alt="pushswap" />
+            </a>
+          </div>
+          <h2 class="mb-2 text-[#484646] font-bold text-2xl uppercase text-center">
+            Pushswap
+          </h2>
+        </div>
+        
+        <div class="flex flex-col items-center mb-8 mr-8">
+          <div class="border-[6px] border-[#62cb78] rounded-[6px] w-[350px] h-[350px] mb-4">
+            <a href="https://github.com/FlorianBeudaert/Battleship" target="_blank">
+              <img src="assets/project/battleship.png" class="hover:brightness-50" alt="battleship" />
+            </a>
+          </div>
+          <h2 class="mb-2 text-[#484646] font-bold text-2xl uppercase text-center">
+            Battleship
+          </h2>
+        </div>
+        
+        <div class="flex flex-col items-center mb-8">
+          <div class="border-[6px] border-[#62cb78] rounded-[6px] w-[350px] h-[350px] mb-4 mr-8">
+            <a href="https://github.com/FlorianBeudaert/Colle-Morpion" target="_blank">
+              <img src="assets/project/morpion.png" class="hover:brightness-50" alt="morpion" />
+            </a>
+          </div>
+          <h2 class="mb-2 text-[#484646] font-bold text-2xl uppercase text-center">
+            Colle Morpion
+          </h2>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+
+      <div id="Contact" class="mx-4 xl:mx-0 ml-4 xl:mx-32 mb-32 pt-32">
+        <h2 class="mb-8 text-[#484646] font-bold uppercase text-3xl">
+          Me Contacter
+        </h2>
+      </div>
+      <div class="flex justify-center">
+        <div class="flex flex-col mb-8 w-full md:w-[700px]">
+          <div class="flex justify-center">
+            <div class="shadow-lg rounded-lg px-4 md:px-8 pt-6 pb-8 mb-4 w-full">
+              <div class="mb-4">
+                <input type="email" id="email" name="email" placeholder="Email" class="bg-gray-200 border border-[#62cb78] w-full h-[35px] md:h-[35px] rounded-[4px]" required/>
+              </div>
+              <div class="mb-4">
+                <input type="text" id="sujet" name="sujet" placeholder="Sujet" class="bg-gray-200 border border-[#62cb78] w-full h-[35px]  md:h-[35px] rounded-[4px]" required/>
+              </div>
+              <div>
+                <textarea id="message" name="message" placeholder="Message" class="bg-gray-200 border border-[#62cb78] h-[150px] w-full rounded-[4px]" required></textarea>
+              </div class="mb-4">
+              <div class="flex justify-center mt-4">
+                <button class="bg-[#9DFFB2] text-white w-full rounded-[6px] font-bold border border-[#62cb78] hover:bg-[#62cb78] hover:text-white cursor-pointer h-[35px]" onclick="sendMail()">
+                  Envoyer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
